@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,14 @@
 		114C2AED26A2BFED00046557 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C2AEC26A2BFED00046557 /* LoginViewController.swift */; };
 		114C2AF226A2BFEF00046557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114C2AF126A2BFEF00046557 /* Assets.xcassets */; };
 		114C2AF526A2BFEF00046557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C2AF326A2BFEF00046557 /* LaunchScreen.storyboard */; };
+		1163F9FB26DA375B00F2881C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1163F9FA26DA375B00F2881C /* Alamofire */; };
+		1163F9FD26DA50F200F2881C /* NewsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163F9FC26DA50F200F2881C /* NewsCollectionViewFlowLayout.swift */; };
+		1163F9FF26DA521000F2881C /* NewsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163F9FE26DA521000F2881C /* NewsCollectionViewController.swift */; };
+		1163FA0126DA52DB00F2881C /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA0026DA52DB00F2881C /* NewsCollectionViewCell.swift */; };
+		1163FA0326DADB2C00F2881C /* NewsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA0226DADB2C00F2881C /* NewsCollectionReusableView.swift */; };
+		1163FA0626DCE9F100F2881C /* WebLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA0526DCE9F100F2881C /* WebLoginViewController.swift */; };
+		1163FA0826DCED1B00F2881C /* Session Singletobn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA0726DCED1B00F2881C /* Session Singletobn.swift */; };
+		1163FA0A26DD21DA00F2881C /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163FA0926DD21DA00F2881C /* APIRequests.swift */; };
 		116F199026C29FD9002300BE /* HideKeyboardTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F198F26C29FD9002300BE /* HideKeyboardTap.swift */; };
 		118BBC9B26A8AC66009AE619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118BBC9A26A8AC66009AE619 /* Main.storyboard */; };
 		118BBCB926AB239E009AE619 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBCB826AB239E009AE619 /* FriendsViewController.swift */; };
@@ -32,14 +40,11 @@
 		118BBCE926B07D39009AE619 /* CustomAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBCE826B07D39009AE619 /* CustomAvatarImageView.swift */; };
 		118BBCF326B29D8C009AE619 /* CustomLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBCF226B29D8C009AE619 /* CustomLoginButton.swift */; };
 		118BBCF826B3E55C009AE619 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBCF726B3E55C009AE619 /* LikeControl.swift */; };
-		118BBCFF26BFFEF9009AE619 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBCFE26BFFEF9009AE619 /* NewsViewController.swift */; };
-		118BBD0126BFFF33009AE619 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBD0026BFFF33009AE619 /* NewsTableViewCell.swift */; };
 		118BBD0326C009CD009AE619 /* JoinGroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBD0226C009CD009AE619 /* JoinGroupTableView.swift */; };
 		118BBD0626C06904009AE619 /* FunctionsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBD0526C06904009AE619 /* FunctionsLoginView.swift */; };
 		118BBD0826C077EA009AE619 /* AnimateFriendsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBD0726C077EA009AE619 /* AnimateFriendsHeader.swift */; };
 		118BBD0A26C07D95009AE619 /* LikeButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBD0926C07D95009AE619 /* LikeButtonAnimation.swift */; };
 		11E2526D26D03D110024ACBD /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2526C26D03D110024ACBD /* Animator.swift */; };
-		11E2527126D0FBD10024ACBD /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2527026D0FBD10024ACBD /* CustomSegue.swift */; };
 		11E2527626D4441F0024ACBD /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2527526D4441F0024ACBD /* CellConfigurator.swift */; };
 		11E2527A26D457260024ACBD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 11E2527926D457260024ACBD /* .swiftlint.yml */; };
 		11E2527C26D4FB000024ACBD /* GroupsVC SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2527B26D4FB000024ACBD /* GroupsVC SearchBar.swift */; };
@@ -77,6 +82,13 @@
 		114C2AF626A2BFEF00046557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114C2AFB26A2BFEF00046557 /* SocialNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114C2B0626A2BFEF00046557 /* SocialNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1163F9FC26DA50F200F2881C /* NewsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		1163F9FE26DA521000F2881C /* NewsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewController.swift; sourceTree = "<group>"; };
+		1163FA0026DA52DB00F2881C /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1163FA0226DADB2C00F2881C /* NewsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionReusableView.swift; sourceTree = "<group>"; };
+		1163FA0526DCE9F100F2881C /* WebLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginViewController.swift; sourceTree = "<group>"; };
+		1163FA0726DCED1B00F2881C /* Session Singletobn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session Singletobn.swift"; sourceTree = "<group>"; };
+		1163FA0926DD21DA00F2881C /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		116F198F26C29FD9002300BE /* HideKeyboardTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardTap.swift; sourceTree = "<group>"; };
 		118BBC9A26A8AC66009AE619 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		118BBCB826AB239E009AE619 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -93,14 +105,11 @@
 		118BBCE826B07D39009AE619 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAvatarImageView.swift; sourceTree = "<group>"; };
 		118BBCF226B29D8C009AE619 /* CustomLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginButton.swift; sourceTree = "<group>"; };
 		118BBCF726B3E55C009AE619 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
-		118BBCFE26BFFEF9009AE619 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		118BBD0026BFFF33009AE619 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		118BBD0226C009CD009AE619 /* JoinGroupTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGroupTableView.swift; sourceTree = "<group>"; };
 		118BBD0526C06904009AE619 /* FunctionsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsLoginView.swift; sourceTree = "<group>"; };
 		118BBD0726C077EA009AE619 /* AnimateFriendsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateFriendsHeader.swift; sourceTree = "<group>"; };
 		118BBD0926C07D95009AE619 /* LikeButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonAnimation.swift; sourceTree = "<group>"; };
 		11E2526C26D03D110024ACBD /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
-		11E2527026D0FBD10024ACBD /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		11E2527526D4441F0024ACBD /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 		11E2527926D457260024ACBD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		11E2527B26D4FB000024ACBD /* GroupsVC SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupsVC SearchBar.swift"; sourceTree = "<group>"; };
@@ -112,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1163F9FB26DA375B00F2881C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +173,7 @@
 		114C2AE726A2BFED00046557 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				1163FA0426DCE0D500F2881C /* NetworkService */,
 				11E2527D26D5561D0024ACBD /* Patterns */,
 				11E2527426D444060024ACBD /* Generix */,
 				11E2526B26D03CEC0024ACBD /* UIHelpers */,
@@ -179,6 +190,14 @@
 				11E2527926D457260024ACBD /* .swiftlint.yml */,
 			);
 			path = SocialNetwork;
+			sourceTree = "<group>";
+		};
+		1163FA0426DCE0D500F2881C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1163FA0926DD21DA00F2881C /* APIRequests.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		116F199126C2BBD4002300BE /* LaunchScreen */ = {
@@ -206,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				114C2AEC26A2BFED00046557 /* LoginViewController.swift */,
+				1163FA0526DCE9F100F2881C /* WebLoginViewController.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -281,8 +301,10 @@
 		118BBCFD26BFFED5009AE619 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				118BBCFE26BFFEF9009AE619 /* NewsViewController.swift */,
-				118BBD0026BFFF33009AE619 /* NewsTableViewCell.swift */,
+				1163F9FC26DA50F200F2881C /* NewsCollectionViewFlowLayout.swift */,
+				1163F9FE26DA521000F2881C /* NewsCollectionViewController.swift */,
+				1163FA0026DA52DB00F2881C /* NewsCollectionViewCell.swift */,
+				1163FA0226DADB2C00F2881C /* NewsCollectionReusableView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -302,7 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				11E2526C26D03D110024ACBD /* Animator.swift */,
-				11E2527026D0FBD10024ACBD /* CustomSegue.swift */,
 				2913234426D3F64C00D6CE78 /* UIViewController+Extension.swift */,
 			);
 			path = UIHelpers;
@@ -319,6 +340,7 @@
 		11E2527D26D5561D0024ACBD /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				1163FA0726DCED1B00F2881C /* Session Singletobn.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -339,6 +361,9 @@
 			dependencies = (
 			);
 			name = SocialNetwork;
+			packageProductDependencies = (
+				1163F9FA26DA375B00F2881C /* Alamofire */,
+			);
 			productName = SocialNetwork;
 			productReference = 114C2AE526A2BFED00046557 /* SocialNetwork.app */;
 			productType = "com.apple.product-type.application";
@@ -410,6 +435,9 @@
 				Base,
 			);
 			mainGroup = 114C2ADC26A2BFED00046557;
+			packageReferences = (
+				1163F9F926DA375B00F2881C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 114C2AE626A2BFED00046557 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,20 +490,24 @@
 				118BBCF326B29D8C009AE619 /* CustomLoginButton.swift in Sources */,
 				11395CA026CB2217006B13EC /* BigSizedPhotosCollectionViewFlowLayout.swift in Sources */,
 				118BBD0326C009CD009AE619 /* JoinGroupTableView.swift in Sources */,
-				118BBCFF26BFFEF9009AE619 /* NewsViewController.swift in Sources */,
 				11395C9E26CB11E9006B13EC /* BigSizedPhotosCollectionViewCell.swift in Sources */,
 				118BBCC126AB3888009AE619 /* FriendPhotosCollectionViewController.swift in Sources */,
+				1163FA0626DCE9F100F2881C /* WebLoginViewController.swift in Sources */,
+				1163F9FD26DA50F200F2881C /* NewsCollectionViewFlowLayout.swift in Sources */,
 				118BBCDA26AD4C63009AE619 /* GroupDetalis.swift in Sources */,
-				11E2527126D0FBD10024ACBD /* CustomSegue.swift in Sources */,
+				1163FA0326DADB2C00F2881C /* NewsCollectionReusableView.swift in Sources */,
 				118BBCE126AD5880009AE619 /* AvailableToJoin.swift in Sources */,
 				118BBD0626C06904009AE619 /* FunctionsLoginView.swift in Sources */,
-				118BBD0126BFFF33009AE619 /* NewsTableViewCell.swift in Sources */,
 				118BBCC426AB391D009AE619 /* FriendPhotosCollectionViewCell.swift in Sources */,
 				118BBCE926B07D39009AE619 /* CustomAvatarImageView.swift in Sources */,
 				118BBCF826B3E55C009AE619 /* LikeControl.swift in Sources */,
 				118BBCC626AB39C2009AE619 /* FriendDetalis.swift in Sources */,
 				114C2AED26A2BFED00046557 /* LoginViewController.swift in Sources */,
+				1163FA0A26DD21DA00F2881C /* APIRequests.swift in Sources */,
 				11E2527C26D4FB000024ACBD /* GroupsVC SearchBar.swift in Sources */,
+				1163FA0126DA52DB00F2881C /* NewsCollectionViewCell.swift in Sources */,
+				1163F9FF26DA521000F2881C /* NewsCollectionViewController.swift in Sources */,
+				1163FA0826DCED1B00F2881C /* Session Singletobn.swift in Sources */,
 				118BBCE426AD5A72009AE619 /* AvailableToJoinTableViewController.swift in Sources */,
 				118BBCDF26AD4F39009AE619 /* GroupsTableViewCell.swift in Sources */,
 				1136F40E26C27E2A002B01F8 /* OtherAnimations.swift in Sources */,
@@ -809,6 +841,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1163F9F926DA375B00F2881C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1163F9FA26DA375B00F2881C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1163F9F926DA375B00F2881C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 114C2ADD26A2BFED00046557 /* Project object */;
 }

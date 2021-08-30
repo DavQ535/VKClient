@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class LoginViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak private var scrollView: UIScrollView!
@@ -18,9 +19,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak private var loading1: UIView!
     @IBOutlet weak private var loading2: UIView!
     @IBOutlet weak private var loading3: UIView!
+    
     // MARK: - LifeCycle
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         navigationController?.navigationBar.isHidden = true
@@ -37,6 +41,7 @@ class LoginViewController: UIViewController {
         }
     }
     // MARK: - Methods
+    
     @IBAction func logOut(with segue: UIStoryboardSegue) {
     }
      @objc private func keyboardWasShown(notification: Notification) {
@@ -59,14 +64,14 @@ class LoginViewController: UIViewController {
         alertMessage.addAction(alertAction)
         self.present(alertMessage, animated: true, completion: nil)
     }
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "MainScreen" && checkAuth() {
-            return true
-        } else {
-            loginErrorAlert()
-            return false
-        }
-    }
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "MainScreen" && checkAuth() {
+//            return true
+//        } else {
+//            loginErrorAlert()
+//            return false
+//        }
+//    }
     @IBAction private func loginButtonPressed(_ sender: Any) {
         UIView.animate(withDuration: 0.3) {
             self.loading1.alpha = 1.0

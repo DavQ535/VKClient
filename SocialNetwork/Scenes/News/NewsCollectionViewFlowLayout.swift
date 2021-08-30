@@ -1,12 +1,13 @@
 //
-//  BigSizedPhotosCollectionViewFlowLayout.swift
+//  NewsCollectionViewFlowLayout.swift
 //  SocialNetwork
 //
-//  Created by David Varro on 16/08/2021.
+//  Created by David Varro on 28/08/2021.
 //
 
 import UIKit
-class BigSizedPhotosCollectionViewFlowLayout: UICollectionViewFlowLayout {
+
+class NewsCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
     fileprivate var lastCollectionViewSize: CGSize = CGSize.zero
     var scaleOffset: CGFloat = 200
@@ -106,3 +107,4 @@ class BigSizedPhotosCollectionViewFlowLayout: UICollectionViewFlowLayout {
         collectionView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
+

@@ -7,10 +7,16 @@
 
 import UIKit
 
+private enum Constants {
+    
+    enum Identifiers {
+       static let bigSizedPhotosIdentifier = "ToBigSizedPhotos"
+        static let reuseID = "FriendPhotosCollectionViewCell"
+    }
+}
+
 class FriendPhotosCollectionViewController: UICollectionViewController {
     // MARK: - Properties
-    private let collectionCellID = "FriendPhotosCollectionViewCell"
-    private let imageViewID = "ToBSPhoto"
     private let animator = Animator()
     var friend: Friend!
     var selectedIndex = 0
@@ -22,7 +28,7 @@ class FriendPhotosCollectionViewController: UICollectionViewController {
         title = friend.name
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToBigSizedPhotos" {
+        if segue.identifier == Constants.Identifiers.bigSizedPhotosIdentifier {
             guard let photosVC = segue.destination as? BigSizedPhotosViewController else {
                 return }
             photosVC.selectedIndex = selectedIndex
@@ -34,7 +40,7 @@ class FriendPhotosCollectionViewController: UICollectionViewController {
         let bigSizedPhotosVC = BigSizedPhotosViewController()
         selectedIndex = indexPath.row
         bigSizedPhotosVC.selectedIndex = selectedIndex
-        performSegue(withIdentifier: "ToBigSizedPhotos", sender: friend)
+        performSegue(withIdentifier: Constants.Identifiers.bigSizedPhotosIdentifier, sender: friend)
     }
     // MARK: - CollectionView DataSource
 

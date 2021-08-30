@@ -7,6 +7,14 @@
 
 import UIKit
 
+private enum Contants {
+    enum Identifiers {
+        static let reuseID = "BigSizedPhotosCell"
+    }
+    
+}
+
+
 class BigSizedPhotosViewController: UIViewController {
     var friendPhotos = [UIImage]()
     var selectedIndex: Int = 0
@@ -29,7 +37,8 @@ extension BigSizedPhotosViewController: UICollectionViewDelegate,
     }
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(BigSizedPhotosCollectionViewCell.self, for: indexPath)
+       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BigSizedPhotosCell", for: indexPath) as? BigSizedPhotosCollectionViewCell else { fatalError("Cannot") }
+     
         cell.bigSizedPhotosImageView.image = friendPhotos[indexPath.row]
         cell.setNavigatableDelegate(self)
         return cell

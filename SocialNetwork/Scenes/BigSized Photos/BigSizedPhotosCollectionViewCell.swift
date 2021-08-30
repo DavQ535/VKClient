@@ -14,13 +14,12 @@ protocol NavigatableViewController: AnyObject {
 
 class BigSizedPhotosCollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     @IBOutlet weak var bigSizedPhotosImageView: UIImageView!
-    static let cellSize = CGSize(width: 450, height: 450)
+    static let cellSize = CGSize(width: 350, height: 350)
     private weak var navigatorDelegate: NavigatableViewController?
     // MARK: - Methods
     @objc func handleSwipe(_ recognizer: UISwipeGestureRecognizer) {
         navigatorDelegate?.navigationController?.modalTransitionStyle = .partialCurl
         navigatorDelegate?.navigationController?.popViewController(animated: true)
-
     }
     func addSwipeGesture() {
         let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))

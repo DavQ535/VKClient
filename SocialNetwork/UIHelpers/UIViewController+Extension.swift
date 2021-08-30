@@ -2,7 +2,7 @@
 //  UIViewController+Extension.swift
 //  SocialNetwork
 //
-//  Created by Evgenii Semenov on 23.08.2021.
+//  Created by David Varro on 23.08.2021.
 //
 
 import UIKit
