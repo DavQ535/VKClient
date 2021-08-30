@@ -12,7 +12,15 @@ class NewsViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak private var newsTableView: UITableView!
     @IBOutlet private var customNavigationBarView: UIView!
+    @IBOutlet private weak var headerView: UIView!
     // MARK: - Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        headerView.layer.cornerRadius = 12
+        headerView.layer.borderColor = UIColor.lightGray.cgColor
+        headerView.layer.borderWidth = 0.4
+    }
     override func viewWillAppear(_ animated: Bool) {
         setupNavBar()
     }
@@ -31,15 +39,4 @@ class NewsViewController: UIViewController {
         customNavigationBarView.frame = (navigationController?.navigationBar.bounds)!
     }
 }
-extension NewsViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(NewsTableViewCell.self, for: indexPath)
-        cell.newsPosterViewConfig()
-        return cell
-        
-    }
-}
+

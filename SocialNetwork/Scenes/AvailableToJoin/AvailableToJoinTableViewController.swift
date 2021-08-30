@@ -7,6 +7,12 @@
 
 import UIKit
 
+ private enum Constants {
+    enum Identifiers {
+        
+    }
+}
+
 class AvailableToJoinTableViewController: UITableViewController {
     // MARK: - Properties
     var availableGroups = AvailableToJoin.availableToJoin
